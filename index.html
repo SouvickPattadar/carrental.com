@@ -1,0 +1,1351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+ <!----------favicon-------->
+ <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!----------favicon-------->
+<title>Car Rental Service</title>
+
+ <link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-utilities.css">
+<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="font-face.css">
+<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="owl.theme.green.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-clockpicker.css">
+<link rel="stylesheet" type="text/css" href="datepicker.css">
+<link rel="stylesheet" type="text/css" href="booking.css">
+<link rel="stylesheet" type="text/css" href="slick-theme.css">
+<link rel="stylesheet" type="text/css" href="slick.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+
+  </head>
+  
+  <body>
+ 
+ <header>
+
+<section class="top-header py-2">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+        <div class="col-6">
+          <div class="top-social">
+            <a class="mr-3" href="#"><i class="fa fa-facebook" style="left: 5px;" aria-hidden="true"></i></a>
+            <a class="mr-3" href="#"><i class="fa fa-instagram " style="left: 2px;" aria-hidden="true"></i></a>
+           <a href="#"> <i class="fa fa-youtube-play" style="left: 1px;" aria-hidden="true"></i></a>
+          </div>
+        </div>
+         <div class="col-6 ride-col d-flex justify-content-end">
+           <!---------button------>
+        
+          <!-- Button trigger modal -->
+<button type="button" class="btn ride-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Book Ride
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title text-center fs-5" id="exampleModalLabel">Book Your Ride</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ride-form">
+          <form id="ride-form" action="" method="post" class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name..." class="form-control" required>
+                <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <input type="tel" name="phone" id="phone" placeholder="Enter Your phone no..." class="form-control"  required>
+                <div class="invalid-feedback">
+                Please enter phone number
+              </div>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email id..." class="form-control"  required>
+                <div class="invalid-feedback">
+                Please enter email id
+              </div>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <select class="form-select" aria-label="Default select example" required>
+                  <option selected disabled value="">Open this select menu</option>
+                  <option value="hatchback">Hatchback</option>
+                  <option value="sedan">Sedan</option>
+                  <option value="suv">SUV</option>
+                 </select>
+
+                <div class="invalid-feedback">
+                  Please select a option
+              </div>
+              </div>
+               <div class="col-12 mb-4">
+              <textarea placeholder="Enter Your message..." class="form-control" rows="3"></textarea>
+              </div>
+              <div class="col-12">
+              <button class="btn ride-btn" type="submit">Submit form</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+         </div>
+      </div>
+  </div>
+</section>
+
+  <!----------------------------------->
+  <section class="header">
+    <div class="container">
+      
+      <div class="row d-lg-flex align-items-center">
+        
+        <!---------menu------>
+        <div class=" col-12">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid px-0">
+    <a class="navbar-brand" href="#"> <img src="logo.png" alt="Car Rental Logo" class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboputCompany">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cars">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work-process">Work Process</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="#destination">Destination</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#why-choose">Why Choose Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</header>
+
+<!---------------Banner --------------------------->
+<section id="home">
+  <div class="banner-slider overflow-hidden"> 
+    <!-----------------1----------------------->
+
+<div class="tabForm-banner d-lg-flex align-items-center section-padding position-relative">
+  <div style="z-index: 2;" class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="tabForm-banner-content  mb-4 mb-md-0">
+            <div style="color:#ffffff" class="topinfo"><i class="fa fa-thumbs-up orangeColor" aria-hidden="true"></i> 100% Trusted car rental platform in India</div>
+            <h1 style="color:#ffffff" class="mb-3">Find Your Best <br> <span class="orangeColor">Dream Car for Rental </span></h1>
+            <span style="color:#ffffff">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+            <div class="tabForm-banner-btn mt-5"><a class="py-2 px-5" href="#cars">View all cars <i class="fa fa-angle-right ml-4" aria-hidden="true"></i></a></div>
+          </div>
+    </div>
+
+ <div class="col-lg-5 my-md-5 my-lg-0 my-3">
+         <div class="Tab-style-form tours-details">
+
+         
+          <ul class="tour-type text-left d-flex justify-content-center">
+            <li class="package-item mr-5 mb-sm-0 mb-3 mr-0-responive">
+                <button class="tour-type-name tab-link current" data-tab="Outstation">
+                 Outstation
+            </button>
+           </li>
+
+            <li class="package-item mr-5 mb-sm-0 mb-3 mr-0-responive"> 
+                 <button class="tour-type-name tab-link " data-tab="local">
+                  Local
+                </button>
+             </li>
+
+             <li class="package-item">
+                   <button class="tour-type-name tab-link" data-tab="tour-Package">
+                  Tour Package
+                    </button>
+              </li>
+
+               
+          </ul>
+         <!-------------->
+         <div id="Outstation" class="tab-content1 current">
+               <div class="Outstation-form">
+    <!-----------Choose Trip-------------->
+    <div class="OutStation-trip d-sm-flex">
+      <div class="OT-trip-info mr-5"><span>Trip Type :- </span></div>
+       <div class="OT-trip-form my-sm-0 my-2">
+           <input class="cursor-pointer" type="radio" name="OT-trip" id="Round-trip"  checked> <label class="mr-4" for="R-trip"> Round Trip</label>
+          <input class="cursor-pointer" type="radio" name="OT-trip" id="One-way" > <label for="O-way"> One Way</label>
+       </div>
+    </div>
+
+    <!---------------outstation Form 1--------------->
+
+    <form action=""  id="Roundtrip-form" class="mt-4 form">
+      <div class="form-row">
+        <div class="form-table mb-3">
+          <div class="form-box ">
+            <label class="form-label" for="RtFormCity">From City</label>
+            <input type="text" class="form-control" name="RtFormCity" id="RtFormCity" autocomplete="off" required>
+          </div>
+           <div class="form-box">
+             <label class="form-label" for="RtDesCity">Destination City</label>
+            <input type="text" class="form-control" name="RtDesCity" id="RtDesCity" autocomplete="off" required>
+           </div>
+        </div>
+        <div class="form-table mb-3">
+          <div class="form-box ">
+            <label class="form-label" for="RtTravelDate">Travel Date</label>
+            <input type="date" class="form-control cursor-pointer" name="RtTravelDate" id="RtTravelDate" required>
+          </div>
+           <div class="form-box">
+             <label class="form-label" for="RtTravelTime">Travel Time</label>
+            <select id="RtTravelTime" class="form-control form-select cursor-pointer" name="RtTravelTime" required>
+              <option disabled selected value="">Select Your Time</option>
+              <option value="12:00 pm">12:00 pm</option>
+              <option value="1:00 pm">1:00 pm</option>
+              <option value="2:00 pm">2:00 pm</option>
+              <option value="3:00 pm">3:00 pm</option>
+              <option value="4:00 pm">4:00 pm</option>
+              <option value="5:00 pm">5:00 pm</option>
+              <option value="6:00 pm">6:00 pm</option>
+              <option value="7:00 pm">7:00 pm</option>
+              <option value="8:00 pm">8:00 pm</option>
+              <option value="9:00 pm">9:00 pm</option>
+              <option value="10:00 pm">10:00 pm</option>
+              <option value="11:00 pm">11:00 pm</option>
+               <option value="12:00 am">12:00 am</option>
+            </select>
+           </div>
+        </div>
+      <div class="form-fullWidth mb-4">
+        <label class="form-label" for="RtReturnDate">Return Date</label>
+        <input type="date" class="form-control cursor-pointer" name="RtReturnDate" id="RtReturnDate" required>
+      </div>
+      <div class="form-fullWidth">
+        <input type="submit" class="form-control cursor-pointer" name="Roundtrip-Submit" id="Roundtrip-Submit" value="Rent Your Car">
+      </div>
+      
+      </div>
+    </form>
+ <!---------------outstation Form 2--------------->
+ <form action=""  id="oneWay-form" class="mt-4 form">
+      <div class="form-row">
+        <div class="form-fullWidth mb-3">
+        <label class="form-label" for="oneWayFrCity">From City</label>
+        <input type="text" class="form-control" name="oneWayFrCity" id="oneWayFrCity" autocomplete="off" required>
+      </div>
+      <div class="form-fullWidth mb-3">
+        <label class="form-label" for="oneWayDesCity">Destination City</label>
+        <input type="text" class="form-control" name="oneWayDesCity" id="oneWayDesCity" autocomplete="off" required>
+      </div>
+      <div class="form-table mb-4">
+          <div class="form-box ">
+            <label class="form-label" for="oneWayTravelDate">Travel Date</label>
+            <input type="date" class="form-control cursor-pointer" name="oneWayTravelDate" id="oneWayTravelDate" required>
+          </div>
+           <div class="form-box">
+             <label class="form-label" for="oneWayTravelTime">Travel Time</label>
+            <select id="oneWayTravelTime" class="form-control form-select cursor-pointer" name="oneWayTravelTime" required>
+              <option disabled selected value="">Select Your Time</option>
+              <option value="12:00 pm">12:00 pm</option>
+              <option value="1:00 pm">1:00 pm</option>
+              <option value="2:00 pm">2:00 pm</option>
+              <option value="3:00 pm">3:00 pm</option>
+              <option value="4:00 pm">4:00 pm</option>
+              <option value="5:00 pm">5:00 pm</option>
+              <option value="6:00 pm">6:00 pm</option>
+              <option value="7:00 pm">7:00 pm</option>
+              <option value="8:00 pm">8:00 pm</option>
+              <option value="9:00 pm">9:00 pm</option>
+              <option value="10:00 pm">10:00 pm</option>
+              <option value="11:00 pm">11:00 pm</option>
+               <option value="12:00 am">12:00 am</option>
+            </select>
+           </div>
+        </div>
+        <div class="form-fullWidth">
+        <input type="submit" class="form-control cursor-pointer" name="oneWaytrip-Submit" id="oneWaytrip-Submit" value="Rent Your Car">
+      </div>
+
+      </div>
+    </form>
+     
+    </div>
+         </div>  
+<!------------------------------local---------->
+          <div id="local" class="tab-content1">
+              <div class="local-form" style="margin-top:-20px">
+      <form action=""  id="localtrip-form" class="mt-4 form">
+      <div class="form-row">
+        <div class="form-fullWidth mb-3">
+        <label class="form-label" for="localPickup">Pick Up Place</label>
+        <input type="text" class="form-control" name="localPickup" id="localPickup" autocomplete="off" required>
+      </div>
+      <div class="form-fullWidth mb-3">
+        <label class="form-label" for="localdrop">Drop Place</label>
+        <input type="text" class="form-control" name="localdrop" id="localdrop" autocomplete="off" required>
+      </div>
+      <div class="form-table mb-4">
+          <div class="form-box ">
+            <label class="form-label" for="localTravelDate">Travel Date</label>
+            <input type="date" class="form-control cursor-pointer" name="localTravelDate" id="localTravelDate" required>
+          </div>
+           <div class="form-box">
+             <label class="form-label" for="localTravelTime">Travel Time</label>
+            <select id="localTravelTime" class="form-control form-select cursor-pointer" name="localTravelTime" required>
+              <option disabled selected value="">Select Your Time</option>
+              <option value="12:00 pm">12:00 pm</option>
+              <option value="1:00 pm">1:00 pm</option>
+              <option value="2:00 pm">2:00 pm</option>
+              <option value="3:00 pm">3:00 pm</option>
+              <option value="4:00 pm">4:00 pm</option>
+              <option value="5:00 pm">5:00 pm</option>
+              <option value="6:00 pm">6:00 pm</option>
+              <option value="7:00 pm">7:00 pm</option>
+              <option value="8:00 pm">8:00 pm</option>
+              <option value="9:00 pm">9:00 pm</option>
+              <option value="10:00 pm">10:00 pm</option>
+              <option value="11:00 pm">11:00 pm</option>
+               <option value="12:00 am">12:00 am</option>
+            </select>
+           </div>
+        </div>
+        <div class="form-fullWidth">
+        <input type="submit" class="form-control cursor-pointer" name="localtrip-Submit" id="localtrip-Submit" value="Rent Your Car">
+      </div>
+
+      </div>
+    </form>
+    </div>
+         </div>   
+<!----------------------------Tour Package------------------->
+          <div id="tour-Package" class="tab-content1">
+               <div class="TourPackage-form" style="margin-top:-20px">
+      <form action=""  id="TourPackage-form" class="mt-4 form">
+      <div class="form-row">
+       <div class="form-table mb-4">
+         <div class="form-box ">
+            <label class="form-label" for="TourPackageDestination">Destination</label>
+            <select id="TourPackageDestination" name="TourPackageDestination" class="form-control cursor-pointer form-select" required>
+              <option disabled selected value="">Select Destination</option>
+              <option value="DARJEELING"> DARJEELING</option>
+              <option value="SIKKIM"> SIKKIM</option>
+              <option value="BHUTAN"> BHUTAN</option>
+              <option value="DOOARS"> DOOARS</option>
+            </select>
+          </div>
+          <div class="form-box ">
+             <label class="form-label" for="selectTourPackage">Tour Package</label>
+            <select id="selectTourPackage" name="selectTourPackage" class="form-control cursor-pointer form-select" required>
+              <option disabled selected value="">Select Tour Package</option>
+             
+            </select>
+          </div>
+       </div>
+
+       <div class="form-fullWidth mb-3">
+        <label class="form-label" for="peopleTourPackage">No of People</label>
+            <select id="peopleTourPackage" class="form-control form-select cursor-pointer" name="peopleTourPackage" required>
+              <option disabled selected value="">Select No of People</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="10+">10+</option>
+            </select>
+      </div>
+
+      <div class="form-table mb-4">
+          <div class="form-box ">
+            <label class="form-label" for="tourPackageTravelDate">Travel Date</label>
+            <input type="date" class="form-control cursor-pointer" name="tourPackageTravelDate" id="tourPackageTravelDate" required>
+          </div>
+           <div class="form-box">
+             <label class="form-label" for="tourPackageTravelTime">Travel Time</label>
+            <select id="tourPackageTravelTime" class="form-control form-select cursor-pointer" name="tourPackageTravelTime" required>
+              <option disabled selected value="">Select Your Time</option>
+              <option value="12:00 pm">12:00 pm</option>
+              <option value="1:00 pm">1:00 pm</option>
+              <option value="2:00 pm">2:00 pm</option>
+              <option value="3:00 pm">3:00 pm</option>
+              <option value="4:00 pm">4:00 pm</option>
+              <option value="5:00 pm">5:00 pm</option>
+              <option value="6:00 pm">6:00 pm</option>
+              <option value="7:00 pm">7:00 pm</option>
+              <option value="8:00 pm">8:00 pm</option>
+              <option value="9:00 pm">9:00 pm</option>
+              <option value="10:00 pm">10:00 pm</option>
+              <option value="11:00 pm">11:00 pm</option>
+               <option value="12:00 am">12:00 am</option>
+            </select>
+           </div>
+        </div>
+        <div class="form-fullWidth">
+        <input type="submit" class="form-control cursor-pointer" name="tourPackage-Submit" id="tourPackage-Submit" value="Book Your Tour">
+      </div>
+
+      </div>
+    </form>
+    </div>
+         </div>  
+
+         
+
+       </div>
+  </div>
+ </div>
+ </div>
+ </div>
+
+ <!---------------2----------------------->
+    <div class="banner">
+    <div class="container">
+      <div class="row d-md-flex align-items-center">
+        <div class="col-md-6">
+          <div class="banner-content  mb-4 mb-md-0">
+            <div class="topinfo"><i class="fa fa-thumbs-up orangeColor" aria-hidden="true"></i> 100% Trusted car rental platform in India</div>
+            <h1 class="mb-3">Find Your Best <br> <span class="orangeColor">Dream Car for Rental </span></h1>
+            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+            <div class="banner-btn mt-5"><a class="py-2 px-5" href="#cars">View all cars <i class="fa fa-angle-right ml-4" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+        <!-----------col-2-------------------->
+        <div class="col-md-6 ">
+          <img  src="Banner-car.png" alt="banner-img" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!------------------------------->
+  </div>
+</section>
+
+<!-------------After Banner Form----------------->
+
+<section id="form-section" class="searchCar d-lg-block d-none">
+  <div class="container">
+    <div class="book-car">
+      <form id="searchCar" action="" method="post" class="needs-validation" novalidate>
+        <ul class="searchCar-banner px-0 d-lg-flex align-items-center">
+          <!--------------form list 1------------>
+          <li class="searchcar-list mb-3 mb-sm-0 position-relative">
+            <div class="input-block mb-3"><label for="picLocation">Pickup Location</label></div>
+            <div class="form-group">
+            <input type="text" name="picLocation" id="picLocation" placeholder="Enter your Address..." class="form-control" required>
+             <div class="invalid-feedback"> Enter Your Location</div>
+            <div class="form-icon"> <i class="fa fa-map-marker" aria-hidden="true"></i> </div>
+          </div>
+         
+          </li>
+          <!--------------form list 2------------>
+          <li class="searchcar-list mb-3 mb-sm-0">
+            <div class="input-block mb-3"><label>Pickup Date</label></div>
+            <div class="pic-date-time d-sm-flex">
+              <!-------------1----------------------->
+              <div class="form-group dategroup mb-3 mb-sm-0 position-relative">
+            <input type="text" name="picdate" id="picdate" class="form-control datepickr" placeholder="mm/dd/yy"  required>
+            <div class="invalid-feedback"> Select Your Date</div>
+            <div class="form-icon1 "> <i class="fa fa-calendar" aria-hidden="true"></i> </div>
+           
+          </div>
+          <!--------------------2-------------------------->
+          <div class="form-group clockgroup position-relative">
+            <div class="show-input clockpicker "  data-autoclose="true">
+             <input type="text" name="pictime" id="pictime" placeholder = "select" required>
+              <div class="invalid-feedback"> Select Your Time</div>
+             </div>
+            <div class="form-icon1"> <i class="fa fa-clock-o" aria-hidden="true"></i> </div>
+          
+          </div>
+            </div>
+          </li>
+          <!--------------form list 3------------>
+           <li class="searchcar-list mb-3 mb-sm-0">
+            <div class="input-block mb-3"><label>Return Date</label></div>
+            <div class="pic-date-time d-sm-flex">
+              <!-------------1----------------------->
+              <div class="form-group dategroup mb-3 mb-sm-0 position-relative">
+            <input type="text" name="retDate" id="retDate" class="form-control datepickr" placeholder="mm/dd/yy"  required>
+             <div class="invalid-feedback"> Select Your Date</div>
+            <div class="form-icon1 "> <i class="fa fa-calendar" aria-hidden="true"></i> </div>
+           
+          </div>
+          <!--------------------2-------------------------->
+          <div class="form-group clockgroup position-relative">
+            <div class="show-input clockpicker "  data-autoclose="true">
+             <input type="text" name="retTime" id="retTime" placeholder = "select" required>
+             <div class="invalid-feedback"> Select Your Time</div>
+             </div>
+            <div class="form-icon1"> <i class="fa fa-clock-o" aria-hidden="true"></i> </div>
+            
+          </div>
+            </div>
+          </li>
+          <!--------------form list 4------------>
+          <li class="searchcar-listlast position-relative">
+            <input class="sub-btn btn" type="submit" name="bookSubmit" id="bookSubmit" value="Book Now">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</section>
+<!----------------------------------About Company---------------------->
+
+<section id="aboputCompany">
+  <div class="about-company mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 mb-lg-0 mb-5">
+          <div class="about-img "><img src="About-carRental.png" alt="about-company" class="img-fluid"></div>
+        </div>
+        <!------------------------------>
+        <div class="col-xl-7 col-lg-6">
+          <div class="about-info headings">
+            <h3 class="mb-3">About Company</h3>
+            <h2 class="mb-3 deepAquaColor">You start the engine and <br> your adventure begins</h2>
+            <span>Certain but she but shyness why cottage. Guy the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence no precaution. My indulged as disposal strongly attended.</span>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-sm-4 mb-sm-0 mb-4">
+               <div class="counting-info d-flex align-items-center">
+                <div class="counter-img mr-4"><img class="img-fluid" src="Happy-customer.png" alt="Happy Revvers"></div>
+            <div class="counter-area">
+              <div> <span class="animated-counter font-weight-bold" data-toggle="counter-up">5000 </span> <span>+</span></div>
+               <div class="counter-text">Happy Revvers</div>
+               
+             </div>
+          </div>
+            </div>
+            <!---------------------------->
+            <div class="col-sm-4 mb-sm-0 mb-4">
+               <div class="counting-info d-flex align-items-center">
+                 <div class="counter-img mr-4"><img class="img-fluid" src="city.png" alt="cities Across India"></div>
+            <div class="counter-area">
+              <div> <span class="animated-counter font-weight-bold" data-toggle="counter-up">22 </span> <span>+</span></div>
+               <div class="counter-text">cities Across India</div>
+               
+             </div>
+          </div>
+            </div>
+            <!-------------------------->
+            <div class="col-sm-4 ">
+               <div class="counting-info d-flex align-items-center">
+                 <div class="counter-img mr-4"><img class="img-fluid" src="electric-car.png" alt="Kms travelled"></div>
+            <div class="counter-area">
+              <div> <span class="animated-counter font-weight-bold" data-toggle="counter-up">50 </span> <span>Mn+</span></div>
+               <div class="counter-text"> Kms travelled</div>
+               
+             </div>
+          </div>
+            </div>
+          </div>
+
+        </div>
+        <!------------------------------->
+      </div>
+    </div>
+  </div>
+</section>
+<!---------------Cars --------------------------->
+
+<section id="cars" class="cars-section section-padding">
+  <div class="container ">
+    <div class="row">
+      <div class="col-12">
+        <div class="headings text-center mb-5">
+          <h3 class="mb-3">Vehicle Models</h3>
+            <h2 class="mb-3 deepAquaColor">Select Vehicle Type</h2>
+        </div>
+        <!----------------------------------->
+        <div class="cars-tab">
+          <ul class="nav nav-pills d-lg-flex justify-content-center mb-3" id="pills-tab" role="tablist">
+        <!---------------------1--------------->
+  <li class="nav-item cars-iem mr-5 mb-sm-0 mb-3 mr-0-responive" data-bs-toggle="tooltip" data-bs-placement="top" title="Hatchback" role="presentation">
+    <button class="nav-link active" id="pills-Hatchback" data-bs-toggle="pill" data-bs-target="#Hatchback" type="button" role="tab" aria-controls="Hatchback" aria-selected="true">
+      <img src="sport-car.png" alt="car" class="img-fluid mr-2"> 
+      <span class="car-tist-name">Hatchback</span>
+    </button>
+    <!---------------------2--------------->
+  </li>
+  <li class="nav-item cars-iem mr-5 mb-sm-0 mb-3 mr-0-responive" data-bs-toggle="tooltip" data-bs-placement="top" title="Suv" role="presentation">
+    <button class="nav-link" id="pills-Suv" data-bs-toggle="pill" data-bs-target="#Suv" type="button" role="tab" aria-controls="Suv" aria-selected="false">
+      <img src="sport-car.png" alt="car" class="img-fluid mr-2"> 
+      <span class="car-tist-name">Suv</span>
+    </button>
+  </li>
+   <!---------------------3--------------->
+  <li class="nav-item cars-iem" data-bs-toggle="tooltip" data-bs-placement="top" title="Sedan" role="presentation">
+    <button class="nav-link" id="pills-Sedan" data-bs-toggle="pill" data-bs-target="#Sedan" type="button" role="tab" aria-controls="Sedan" aria-selected="false">
+      <img src="sport-car.png" alt="car" class="img-fluid mr-2"> 
+      <span class="car-tist-name">Sedan</span>
+    </button>
+  </li>
+
+</ul>
+<!----------------------Tab Content---------------------------->
+<div class="tab-content section-gap" id="pills-tabContent1">
+  <!--------------------content 1------------------------>
+   <div class="tab-pane fade show active" id="Hatchback" role="tabpanel" aria-labelledby="pills-Hatchback" tabindex="0">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="car-img text-center ">
+          <img src="hatchback-car.png" alt="Hatchback" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <table class="home-table table table-bordered table-responsive text-center table-striped ">
+<tbody>
+<tr>
+<th class="text-white tb-border1">Pickup</th>
+<th class="text-white">Destination</th>
+<th class="text-white tb-border2">Rate</th>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Digha</td>
+<td>₹ 2799</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Mandarmani</td>
+<td>₹ 2799</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Haldia</td>
+<td>₹ 2599</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Kharagpur</td>
+<td> ₹ 2399</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Medinipur</td>
+<td>₹ 2499</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Durgapur</td>
+<td>₹ 2799</td>
+</tr>
+
+<tr>
+<td class="tb-border3">Kolkata</td>
+<td>Barddhaman</td>
+<td class="tb-border4">₹ 2399</td>
+</tr>
+
+
+</tbody>
+</table>
+      </div>
+    </div>
+   </div>
+   <!----------------------content 2---------------------------->
+    <div class="tab-pane fade" id="Suv" role="tabpanel" aria-labelledby="pills-Suv" tabindex="0">
+      <div class="row">
+      <div class="col-lg-6">
+        <div class="car-img text-center">
+          <img src="suv-car.png" alt="SUV" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <table class="home-table table table-bordered table-responsive text-center table-striped ">
+<tbody>
+<tr>
+<th class="text-white tb-border1">Pickup</th>
+<th class="text-white">Destination</th>
+<th class="text-white tb-border2">Rate</th>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Digha</td>
+<td>₹ 3999</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Mandarmani</td>
+<td>₹ 3999</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Haldia</td>
+<td>₹ 2999</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Kharagpur</td>
+<td>₹ 2999</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Medinipur</td>
+<td>₹ 3099</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Durgapur</td>
+<td>₹ 3499</td>
+</tr>
+
+<tr>
+<td class="tb-border3">Kolkata</td>
+<td>Barddhaman</td>
+<td class="tb-border4">₹ 2999</td>
+</tr>
+
+
+</tbody>
+</table>
+      </div>
+    </div>
+    </div>
+     <!----------------------content 3---------------------------->
+    <div class="tab-pane fade" id="Sedan" role="tabpanel" aria-labelledby="pills-Sedan" tabindex="0">
+      <div class="row">
+      <div class="col-lg-6">
+        <div class="car-img text-center">
+          <img src="Sedan-car.png" alt="Sedan" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <table class="home-table table table-bordered table-responsive text-center table-striped ">
+<tbody>
+<tr>
+<th class="text-white tb-border1">Pickup</th>
+<th class="text-white">Destination</th>
+<th class="text-white tb-border2">Rate</th>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Digha</td>
+<td>₹ 2999</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Mandarmani</td>
+<td>₹ 2999</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Haldia</td>
+<td>₹ 2699</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Kharagpur</td>
+<td>₹ 2699</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Medinipur</td>
+<td>₹ 2599</td>
+</tr>
+
+<tr>
+<td>Kolkata</td>
+<td>Durgapur</td>
+<td>₹ 2999</td>
+</tr>
+
+<tr>
+<td class="tb-border3">Kolkata</td>
+<td>Barddhaman</td>
+<td class="tb-border4">₹ 2599</td>
+</tr>
+
+
+</tbody>
+</table>
+      </div>
+    </div>
+    </div>
+
+</div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------------How It work --------------------------->
+
+<section class="work-process section-padding" id="work-process"> 
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="headings text-center">
+          <h3 class="mb-3">Work Process</h3>
+            <h2 class="mb-3 deepAquaColor">How Its Works</h2>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------->
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 col-12 mb-lg-0 mb-4 d-flex justify-content-center">
+       <div class="process process-1 text-center position-relative">
+          <div class="process-img process-steps position-relative mx-auto mb-sm-4 "><img class="img-fluid" src="car-front.png" alt="Select Your Car"></div>
+          <div class="process-info"><h6><strong>1. </strong> Select Your Car</h6></div>
+        </div>
+      </div>
+      <!------------------col-2--------------------->
+      <div class="col-lg-3 col-sm-6 mb-lg-0 mb-4 col-12 d-flex justify-content-center">
+        <div class="process process-1 text-center position-relative">
+          <div class="process-img process-steps position-relative mx-auto mb-sm-4"><img class="img-fluid" src="apply.png" alt=" Apply"></div>
+          <div class="process-info"><h6><strong>2. </strong> Apply</h6></div>
+        </div>
+      </div>
+      <!------------------col-3--------------------->
+      <div class="col-lg-3 col-sm-6 col-12 mb-sm-0 mb-4 d-flex justify-content-center">
+       <div class="process process-1 text-center position-relative">
+          <div class="process-img process-steps position-relative mx-auto mb-sm-4"><img class="img-fluid" src="Location.png" alt="Choose Location"></div>
+          <div class="process-info"><h6><strong>3. </strong> Choose Location</h6></div>
+        </div>
+      </div>
+      <!------------------col-4--------------------->
+      <div class="col-lg-3 col-sm-6 col-12  d-flex justify-content-center">
+       <div class="process text-center position-relative">
+          <div class="process-img mx-auto mb-4"><img class="img-fluid" src="ridding.png" alt="Ride Anywhere"></div>
+          <div class="process-info"><h6><strong>4. </strong> Ride Anywhere</h6></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------------------------Destination --------------------------->
+
+<section class="destination section-padding" id="destination">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-12">
+        <div class="destin-info">
+          <div class="headings">
+            <h2 class="mb-3 deepAquaColor">FEATURED <br> DESTINATIONS</h2>
+        </div>
+        <p>Explore a different way to travel. This isot as hop's version of Lorem Ipsum. oin gra nibh vel velit auctor aliquet. nean sollicin, lorem quis.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-sm-6 col-12">
+        <div class="destination-slider owl-carousel">
+          <!------------------destination slider 1-------------------->
+        <div class="card">
+        <img class="card-img-top img-fluid" src="Agra.jpg" alt="Agra">
+        <div class="card-body">
+        <h5 class="card-title">Agra, UP</h5>
+       </div>
+      </div>
+<!----------------------- destination slider 2--------------->
+       <div class="card">
+        <img class="card-img-top img-fluid" src="Odisha.jpg" alt="Odisha">
+        <div class="card-body">
+        <h5 class="card-title">Puri, Odisha</h5>
+       </div>
+      </div>
+      <!----------------------- destination slider 3--------------->
+      <div class="card">
+        <img class="card-img-top img-fluid" src="Jaipur.jpg" alt="Jaipur">
+        <div class="card-body">
+        <h5 class="card-title">Amer Fort, Jaipur</h5> 
+       </div>
+      </div>
+      <!----------------------- destination slider 4--------------->
+      <div class="card">
+        <img class="card-img-top img-fluid" src="Delhi.jpg" alt="Delhi">
+        <div class="card-body">
+        <h5 class="card-title">India Gate, Delhi</h5> 
+       </div>
+      </div>
+      <!----------------------- destination slider 5--------------->
+      <div class="card">
+        <img class="card-img-top img-fluid" src="Goa.jpg" alt="Goa">
+        <div class="card-body">
+        <h5 class="card-title">Baga Beach, Goa</h5> 
+       </div>
+      </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-----------------USP------------------------>
+
+<section class="reason-trust section-gap" id="why-choose">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="headings text-center">
+              <h3 class="mb-3">Why Choose Us</h3>
+            <h2 class="mb-3 deepAquaColor">Reasons to Trust</h2>    
+        </div>
+        
+      </div>
+    </div>
+    <!-------------row--------------->
+    <div class="row">
+      <div class="col-lg-6 mb-lg-0 mb-4">
+        <img src="car-right.png" alt="car" class="img-fluid">
+      </div>
+       <div class="col-lg-6">
+         <div class="row">
+           <div class="col-sm-2 col-3">
+             <div class="usp-icon">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="col-sm-10 col-9">
+            <div class="usp-info">
+             <div class="usp-title mb-3"><h4>Best Packages Deal</h4></div>
+             <div class="usp-subtitle">Explore a different way to travel. This isot as hop's version of Lorem Ipsum. oin gra nibh vel velit auctor aliquet. nean sollicin, lorem quis.</div>
+             </div>
+           </div>
+         </div>
+         <!----------------->
+          <div class="row mt-4">
+           <div class="col-sm-2 col-3">
+             <div class="usp-icon">
+             <i class="fa fa-money" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="col-sm-10 col-9">
+            <div class="usp-info">
+             <div class="usp-title mb-3"><h4>Best Price Guarantee</h4></div>
+             <div class="usp-subtitle">Explore a different way to travel. This isot as hop's version of Lorem Ipsum. oin gra nibh vel velit auctor aliquet. nean sollicin, lorem quis.</div>
+             </div>
+           </div>
+         </div>
+          <!----------------->
+          <div class="row mt-4">
+           <div class="col-sm-2 col-3">
+             <div class="usp-icon">
+             <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+             </div>
+           </div>
+           <div class="col-sm-10 col-9">
+            <div class="usp-info">
+             <div class="usp-title mb-3"><h4>24/7 Support</h4></div>
+             <div class="usp-subtitle">Explore a different way to travel. This isot as hop's version of Lorem Ipsum. oin gra nibh vel velit auctor aliquet. nean sollicin, lorem quis.</div>
+             </div>
+           </div>
+         </div>
+
+       </div>
+    </div>
+  </div>
+</section>
+
+<!-----------------Testimonials------------------------>
+
+<section class="review section-padding" id="testimonials">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 mb-5">
+        <div class="headings text-center">
+              <h3 class="mb-3">Testimonials</h3>
+            <h2 class=" deepAquaColor">Top Reviews</h2>    
+        </div>
+         
+      </div>
+
+      <!------------------------->
+
+      <div class="col-12">
+        <div class="review-slider owl-carousel">
+          <!--------------review 1------>
+          <div class="review-items">
+             <div class="review-img text-center">
+               <img src="review-1.png" alt="user" class="img-fluid">
+             </div>
+              <div class="review-body position-relative text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+              </div>
+              <div class="review-meta text-center mt-5">
+                <div class="name">Vivek Sharma</div>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  
+                </div>
+              </div>
+           </div>
+            <!--------------review 2------>
+          <div class="review-items">
+             <div class="review-img text-center">
+               <img src="review-2.png" alt="user" class="img-fluid">
+             </div>
+              <div class="review-body position-relative text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+              </div>
+              <div class="review-meta text-center mt-5">
+                <div class="name">Payel Roy</div>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+              </div>
+           </div>
+            <!--------------review 3------>
+          <div class="review-items">
+             <div class="review-img text-center">
+               <img src="review-3.png" alt="user" class="img-fluid">
+             </div>
+              <div class="review-body position-relative text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+              </div>
+              <div class="review-meta text-center mt-5">
+                <div class="name">shreyas Varma</div>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                 
+                </div>
+              </div>
+           </div>
+            <!--------------review 4------>
+          <div class="review-items">
+             <div class="review-img text-center">
+               <img src="review-4.png" alt="user" class="img-fluid">
+             </div>
+              <div class="review-body position-relative text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+              </div>
+              <div class="review-meta text-center mt-5">
+                <div class="name">Swarnali Karmakar</div>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+              </div>
+           </div>
+            <!--------------review 5------>
+          <div class="review-items">
+             <div class="review-img text-center">
+               <img src="review-5.png" alt="user" class="img-fluid">
+             </div>
+              <div class="review-body position-relative text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+              </div>
+              <div class="review-meta text-center mt-5">
+                <div class="name">Arjun Bhatta</div>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                 <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           </div>
+           <!--------------review 6------>
+          <div class="review-items">
+             <div class="review-img text-center">
+               <img src="review-6.png" alt="user" class="img-fluid">
+             </div>
+              <div class="review-body position-relative text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+              </div>
+              <div class="review-meta text-center mt-5">
+                <div class="name">Rinita Debnath</div>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                 
+                </div>
+              </div>
+           </div>
+          
+        </div>
+      </div>
+        
+    </div>
+  </div>
+</section>
+
+	
+<!----------Footer include-------> 
+   <footer>
+  <div class="top-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-md-4 mb-4">
+          <div class="footer-logo mb-4">
+            <img src="footer-logo.png" alt="logo" class="img-fluid">
+          </div>
+          <div class="footer-info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text
+          </div>
+
+        </div>
+        <div class="col-lg-2 col-md-6 mb-lg-0 mb-md-4 mb-4">
+          <div class="f-heading mb-4"><h5> Vehicle Models</h5></div>
+          <div class="f-links">
+            <a  href="#cars"> Hatchback</a>
+            <a  href="#cars"> Suv</a>
+            <a  href="#cars"> Sedan</a>
+            
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-lg-0 mb-md-0 mb-4">
+          <div class="f-heading mb-4"><h5>Quick Links</h5></div>
+          <div class="f-links">
+            <a  href="#home"> Home</a>
+            <a  href="#aboputCompany"> About</a>
+            <a  href="#work-process">Work Process</a> 
+            <a  href="#destination"> Destination</a>
+            <a  href="#why-choose">Why Choose Us</a>
+            <a  href="#testimonials">Testimonials</a>
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="f-heading mb-4"><h5>contact</h5></div>
+          <div class="contact-info">
+            <div class="f-address mb-3 d-flex align-items-center ">
+              <i class="fa fa-map-marker me-2" aria-hidden="true"></i>
+              16. H.M Road Kolkata West Bengal
+            </div>
+
+            <div class="f-phone mb-3 d-flex align-items-center ">
+              <i class="fa fa-volume-control-phone me-2" aria-hidden="true"></i>
+              1234567890
+            </div>
+            <div class="f-email mb-3 d-flex align-items-center ">
+              <i class="fa fa-envelope me-2" aria-hidden="true"></i>
+              riju1061994@gmail.com
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-footer py-2">
+    <p class="m-0 p-0">Developed By -  Souvick Pattadar</p>
+  </div>
+</footer>
+
+ <!---------Back to Top--------------->
+   <div class="go-top hide d-flex justify-content-center align-items-center cursor-pointer">
+    <i class="fa fa-chevron-up"  aria-hidden="true"></i>
+   </div>
+
+   <!---------social-------------->
+   <div class="social-footer position-fixed">
+     <div class="call mb-3"><a href="#"><img src="phone-call.png" alt="call" class="img-fluid"></a></div>
+      <div class="whatsapp"><a href="#"><img src="whatsapp.png" alt="call" class="img-fluid"></a></div>
+   </div>
+
+<!-----------------feedback form------------------->
+<section class="feedback-form">
+  
+<button class="open-button" onclick="openForm()"><img src="feedback.png" alt="feedback" class="img-fluid"></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="" class="form-container-feedback">
+    <h4> Write Your Feedback</h4>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</section>
+
+
+
+ 	<!----------js include-------> 
+  	<script src="jquery-3.7.1.js"> </script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="popper.min.js"> </script>
+<script src="counterup.min.js"></script>
+<script src="custom.js"> </script>
+<script src="jquery.waypoints.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="bootstrap-clockpicker.js"></script>
+<script src="datepicker.js"></script>
+<script src="datepicker.en.js"></script>
+<script src="jquery.validate.js"></script>
+<script src="wow-1.3.0.min.js"></script>
+<script src="booknow.js"></script>
+<script src="slick.min.js"></script>
+
+
+
+<script type="text/javascript">
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+
+<script type="text/javascript">
+  // feedback form
+
+    function openForm() {
+  
+  $("#myForm").css('display' , 'block');
+  $(".open-button").css('display' , 'none');
+}
+
+function closeForm() {
+   $("#myForm").css('display' , 'none');
+    $(".open-button").css('display' , 'block');
+}
+
+
+
+$(document).ready(function(){
+
+$( ".new-date" ).datepicker({
+  timepicker: true,
+  showWeek: true
+});
+
+
+});
+
+
+</script>
+
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+
+<script type="text/javascript">
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+
+
+
+
+
+  </body>
+</html>
+
+
+

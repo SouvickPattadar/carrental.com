@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*---------------------------- poppins fonts---------------------------------*/
+
+@font-face{
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 100;
+	src: url(Poppins-Thin.woff);			
+}
+
+@font-face{
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 200;
+	src: url(Poppins-ExtraLight.woff);			
+}
+
+
+@font-face{
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: url(Poppins-Light.woff);			
+}
+
+
+@font-face{
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url(Poppins-Regular.woff);			
+}
+
+
+@font-face{
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 500;
+	src: url(Poppins-Medium.woff);			
+}
+
+
+@font-face{
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 600;
+	src: url(Poppins-SemiBold.woff);			
+}
+
+
+@font-face{
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 700;
+	src: url(Poppins-Bold.woff);			
+}
+
+
+@font-face{
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 800;
+	src: url(Poppins-ExtraBold.woff);			
+}
+
+
+@font-face{
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 900;
+	src: url(Poppins-Black.woff);			
+}
+
+/*---------------------------- poppins fonts---------------------------------*/
+
+@font-face{
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 400;
+	src: url(Lora-Regular.woff);			
+}
+
+@font-face{
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 500;
+	src: url(Lora-Medium.woff);			
+}
+
+@font-face{
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 600;
+	src: url(Lora-SemiBold.woff);			
+}
+
+@font-face{
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 700;
+	src: url(Lora-Bold.woff);			
+}
