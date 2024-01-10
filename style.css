@@ -87,13 +87,17 @@ font-weight: 800;  font-size: 42px; line-height: 1.3em; margin-top: 25px;
 }
 
 @media (max-width: 991px){
+input[type="date"].full:before {
+    color:var(--bs-body-color);
+    content:""!important;
+}
 input[type="date"]{height :35px!important}
 input[type="date"]:before {
-  color: var(--bs-body-color);;
+  color: var(--bs-body-color);
   content: attr(placeholder) !important;
   margin-right: 0.5em;
  position: relative;
- top: 8px
+ top: 8px;
 }
 input[type="date"]:focus:before {
   content: '' !important;
