@@ -90,6 +90,7 @@ font-weight: 800;  font-size: 42px; line-height: 1.3em; margin-top: 25px;
 input[type="date"].full:before {
     color:var(--bs-body-color);
     content:""!important;
+     top: 0px!important;
 }
 input[type="date"]{height :35px!important}
 input[type="date"]:before {
