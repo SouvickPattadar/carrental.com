@@ -160,6 +160,12 @@
       });
 
   $('img').on('dragstart', function(event) { event.preventDefault(); });
+	// Menu click Navigation Collapse
+		$('.navbar-nav li a').on('click', function(){
+    if(!$( this ).hasClass('dropdown-toggle')){
+        $('.navbar-collapse').collapse('hide');
+    }
+});
 
      });
 
