@@ -36,7 +36,9 @@ html {
     color: var(--orangeColor);
 }
 .header{box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)}
-
+.Tab-style-form input[type="text"]::placeholder{
+	color: var(--bodyColor);
+}
 .section-gap{margin-top: 70px;}
 .section-padding{padding: 70px 0}
 .form-control:focus , .form-select:focus {box-shadow: none!important}
