@@ -155,11 +155,11 @@
   });
   
 
-// document.addEventListener("contextmenu", (event) => {
-      //   event.preventDefault();
-    //  });
+ document.addEventListener("contextmenu", (event) => {
+         event.preventDefault();
+      });
 
- // $('img').on('dragstart', function(event) { event.preventDefault(); });
+  $('img').on('dragstart', function(event) { event.preventDefault(); });
 	// Menu click Navigation Collapse
 		$('.navbar-nav li a').on('click', function(){
     if(!$( this ).hasClass('dropdown-toggle')){
