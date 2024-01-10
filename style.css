@@ -87,6 +87,7 @@ font-weight: 800;  font-size: 42px; line-height: 1.3em; margin-top: 25px;
 }
 
 @media (max-width: 991px){
+input[type="date"]{height :35px!important}
 input[type="date"]:before {
   color: var(--bs-body-color);;
   content: attr(placeholder) !important;
