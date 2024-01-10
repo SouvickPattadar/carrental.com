@@ -91,6 +91,7 @@ input[type="date"].full:before {
     color:var(--bs-body-color);
     content:""!important;
      top: 0px!important;
+       display :none;
 }
 input[type="date"]{height :35px!important}
 input[type="date"]:before {
@@ -102,6 +103,7 @@ input[type="date"]:before {
 }
 input[type="date"]:focus:before {
   content: '' !important;
+  display :none;
 }
 .ride-col .modal-dialog{max-width: 100%!important;}
 .navbar-nav .nav-item {border-bottom: 1px solid #eeeeee;}
